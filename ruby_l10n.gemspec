@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'ruby_l10n'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.summary     = "A gem that provide L10n functionalities"
   s.description = "A gem that provide L10n functionalities"
   s.authors     = ['Linh Chau']
@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.add_runtime_dependency 'logging', '~> 0'
   s.add_runtime_dependency 'activesupport'
+  s.add_runtime_dependency 'actionview'
   s.add_runtime_dependency 'config_service'
   s.add_development_dependency 'minitest'
 end

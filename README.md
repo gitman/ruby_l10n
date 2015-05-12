@@ -1,4 +1,5 @@
 ### ruby_l10n
+[![Gem Version](https://badge.fury.io/rb/ruby_l10n.svg)](http://badge.fury.io/rb/ruby_l10n)
 
 This is [**Ruby**](https://www.ruby-lang.org/) gem that provides localization functionalities:<br/>
 - Localized strings.
@@ -25,7 +26,7 @@ gem install ruby_l10n
 ```
 
 Then you must add appropriate locale YAML files in to your application's **"conf/locales"** or **"config/locales"**.<br/>
-Please see the files **"config/locales/en-US.yml"** and "config/locales/fr.yml" in this repo for examples.
+Please see the files [**"config/locales/en-US.yml"**](https://github.com/linhchauatl/ruby_l10n/blob/master/config/locales/en-US.yml) and [**"config/locales/fr.yml"**](https://github.com/linhchauatl/ruby_l10n/blob/master/config/locales/fr.yml) in this repo for examples.
 
 When you want to use American English:
 ```ruby
