@@ -1,0 +1,93 @@
+# English translations for Ruby on Rails
+# by Linh Chau
+
+en-US:
+  date:
+    formats:
+      default: "%m/%d/%Y"
+      short: "%b %e"
+      long: "%B %e %Y"
+      long_ordinal: "%B %e %Y"
+      only_day: "%e"
+    day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+    month_names: [January, February, March, April, May, June, July, August, September, October, November, December]
+    abbr_month_names: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+    order: [ year, month, day ]
+
+  time:
+    formats:
+      default: "%Y %B %d %I:%M%p"
+      time: "%I:%M%p"
+      short: "%b %d %I:%M%p"
+      long: "%A %Y %B %d %I:%M:%S%p %Z"
+      long_ordinal: "%A %Y %B %d %I:%M:%S%p %Z"
+      only_second: "%S"
+      history: "%m/%d/%Y %I:%M%p"
+    am: 'am'
+    pm: 'pm'
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "half a minute"
+      less_than_x_seconds:
+        zero:  "less than a second"
+        one:   "less than 1 second"
+        other: "less than {{count}} second"
+      x_seconds:
+        one:   "1 second"
+        other: "{{count}} seconds"
+      less_than_x_minutes:
+        zero:  "less than a minute"
+        one:   "less than 1 minute"
+        other: "less than{{count}} minutes"
+      x_minutes:
+        one:   "1 minute"
+        other: "{{count}} minutes"
+      about_x_hours:
+        one:   "about one hour"
+        other: "about {{count}} hours"
+      x_days:
+        one:   "1 day"
+        other: "{{count}} days"
+      about_x_months:
+        one:   "about one month"
+        other: "about {{count}} months"
+      x_months:
+        one:   "1 month"
+        other: "{{count}} months"
+      about_x_years:
+        one:   "about one year"
+        other: "about {{count}} years"
+      over_x_years:
+        one:   "over one year"
+        other: "over {{count}} years"
+    prompts:
+      year:   "Year"
+      month:  "Month"
+      day:    "Day"
+      hour:   "Hour"
+      minute: "Minute"
+      second: "Second"
+
+  number:
+    format:
+      precision: 3
+      separator: '.'
+      delimiter: ','
+    currency:
+      format:
+        unit: '$'
+        precision: 2
+        format: '%u%n'
+    human:
+      format:
+        precision: 2
+      storage_units: [ Octet, ko, Mo, Go, To ]
+
+  labels:
+    label_not_found: 'Label not found:'
+    hello:  "Hello"
+    thanks: "Thanks"
+    i_like_systems: "I like {{0}} and {{1}}"
+   
