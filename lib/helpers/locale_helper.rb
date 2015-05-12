@@ -19,7 +19,6 @@ class LocaleHelper
     else
       @logger = ::Logging::Logger.new("locale_helper_#{@locale}_#{self.object_id}")
       current_env = ENV['RACK_ENV'] || ENV['RAILS_ENV'] || options['env'] || 'development'
-      #raise File.expand_path("../../log/#{current_env}.log")
       @logger.add_appenders(Logging.appenders.stdout, Logging.appenders.file(File.expand_path("./log/#{current_env}.log")))
     end
 
@@ -123,7 +122,6 @@ class LocaleHelper
 
     if st.nil?
       logger.error("\n***** Warning: label #{label} is not found in the locale #{@locale}.\n\n")
-      # st = LOCALES[US_LOCALE].lc_label(label, args)
       return "#{lc_label('label_not_found')} #{label}"
     end
 

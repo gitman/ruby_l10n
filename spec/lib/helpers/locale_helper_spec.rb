@@ -22,15 +22,15 @@ describe LocaleHelper do
       end
 
       it 'prints Thanks for label thanks' do
-        @lc_helper.lc_label('thanks').must_equal('Thanks')
+        @lc_helper.lc_label(:thanks).must_equal('Thanks')
       end
 
-      it 'intrapolates string correctly' do
-        @lc_helper.lc_label('i_like_systems', 'Mac', 'Linux').must_equal('I like Mac and Linux')
+      it 'interpolates string correctly' do
+        @lc_helper.lc_label(:i_like_systems, 'Mac', 'Linux').must_equal('I like Mac and Linux')
       end
 
       it 'prints Label not found if the label does not exist' do
-        @lc_helper.lc_label('nonexistent_label').must_equal('Label not found: nonexistent_label')
+        @lc_helper.lc_label(:nonexistent_label).must_equal('Label not found: nonexistent_label')
       end
     end # en-US
 
@@ -40,15 +40,15 @@ describe LocaleHelper do
       end
 
       it 'prints Merci label thanks' do
-        @lc_helper.lc_label('thanks').must_equal('Merci')
+        @lc_helper.lc_label(:thanks).must_equal('Merci')
       end
 
-      it 'intrapolates string correctly' do
-        @lc_helper.lc_label('i_like_systems', 'Mac', 'Linux').must_equal('Je aime Mac et Linux')
+      it 'interpolates string correctly' do
+        @lc_helper.lc_label(:i_like_systems, 'Mac', 'Linux').must_equal('Je aime Mac et Linux')
       end
 
       it 'prints Étiquette non trouvé if the label does not exist' do
-        @lc_helper.lc_label('nonexistent_label').must_equal('Étiquette non trouvé: nonexistent_label')
+        @lc_helper.lc_label(:nonexistent_label).must_equal('Étiquette non trouvé: nonexistent_label')
       end
     end # fr
 
