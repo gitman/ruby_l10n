@@ -11,8 +11,7 @@ class LocaleHelper
 
   def initialize(locale, options = {})
     @locale = locale
-    config = ConfigService.load_config("locales/#{locale}.yml")
-    @format_data = config[locale]
+    @format_data = ConfigService.load_config("locales/#{locale}.yml")
 
     if options['logger']
       @logger = options['logger']

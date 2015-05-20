@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'ruby_l10n'
-  s.version     = '0.0.4'
+  s.version     = '0.0.5'
   s.summary     = "A gem that provide L10n functionalities"
   s.description = "A gem that provide L10n functionalities"
   s.authors     = ['Linh Chau']

@@ -2,94 +2,93 @@
 # by Christian Lescuyer (christian@flyingcoders.com)
 # contributor: Sebastien Grosjean - ZenCocoon.com
 
-fr:
-  date:
-    formats:
-      default: "%d/%m/%Y"
-      short: "%e %b"
-      long: "%e %B %Y"
-      long_ordinal: "%e %B %Y"
-      only_day: "%e"
+date:
+  formats:
+    default: "%d/%m/%Y"
+    short: "%e %b"
+    long: "%e %B %Y"
+    long_ordinal: "%e %B %Y"
+    only_day: "%e"
 
-    day_names: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
-    abbr_day_names: [Dim, Lun, Mar, Mer, Jeu, Ven, Sam]
-    month_names: [Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
-    abbr_month_names: [Jan, Fév, Mar, Avr, Mai, Juin, Juil, Août, Sept, Oct, Nov, Déc]
-    order: [ day, month, year ]
+  day_names: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
+  abbr_day_names: [Dim, Lun, Mar, Mer, Jeu, Ven, Sam]
+  month_names: [Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
+  abbr_month_names: [Jan, Fév, Mar, Avr, Mai, Juin, Juil, Août, Sept, Oct, Nov, Déc]
+  order: [ day, month, year ]
 
-  time:
-    formats:
-      default: "%d %B %Y %H:%M"
-      time: "%H:%M"
-      short: "%d %b %H:%M"
-      long: "%A %d %B %Y %H:%M:%S %Z"
-      long_ordinal: "%A %d %B %Y %H:%M:%S %Z"
-      only_second: "%S"
-      history: "%d-%m-%Y %I:%M%p"
-    am: 'am'
-    pm: 'pm'
+time:
+  formats:
+    default: "%d %B %Y %H:%M"
+    time: "%H:%M"
+    short: "%d %b %H:%M"
+    long: "%A %d %B %Y %H:%M:%S %Z"
+    long_ordinal: "%A %d %B %Y %H:%M:%S %Z"
+    only_second: "%S"
+    history: "%d-%m-%Y %I:%M%p"
+  am: 'am'
+  pm: 'pm'
 
-  datetime:
-    distance_in_words:
-      half_a_minute: "une demi-minute"
-      less_than_x_seconds:
-        zero:  "moins d'une seconde"
-        one:   "moins de 1 seconde"
-        other: "moins de {{count}} secondes"
-      x_seconds:
-        one:   "1 seconde"
-        other: "{{count}} secondes"
-      less_than_x_minutes:
-        zero:  "moins d'une minute"
-        one:   "moins de 1 minute"
-        other: "moins de {{count}} minutes"
-      x_minutes:
-        one:   "1 minute"
-        other: "{{count}} minutes"
-      about_x_hours:
-        one:   "environ une heure"
-        other: "environ {{count}} heures"
-      x_days:
-        one:   "1 jour"
-        other: "{{count}} jours"
-      about_x_months:
-        one:   "environ un mois"
-        other: "environ {{count}} mois"
-      x_months:
-        one:   "1 mois"
-        other: "{{count}} mois"
-      about_x_years:
-        one:   "environ un an"
-        other: "environ {{count}} ans"
-      over_x_years:
-        one:   "plus d'un an"
-        other: "plus de {{count}} ans"
-    prompts:
-      year:   "Année"
-      month:  "Mois"
-      day:    "Jour"
-      hour:   "Heure"
-      minute: "Minute"
-      second: "Seconde"
+datetime:
+  distance_in_words:
+    half_a_minute: "une demi-minute"
+    less_than_x_seconds:
+      zero:  "moins d'une seconde"
+      one:   "moins de 1 seconde"
+      other: "moins de {{count}} secondes"
+    x_seconds:
+      one:   "1 seconde"
+      other: "{{count}} secondes"
+    less_than_x_minutes:
+      zero:  "moins d'une minute"
+      one:   "moins de 1 minute"
+      other: "moins de {{count}} minutes"
+    x_minutes:
+      one:   "1 minute"
+      other: "{{count}} minutes"
+    about_x_hours:
+      one:   "environ une heure"
+      other: "environ {{count}} heures"
+    x_days:
+      one:   "1 jour"
+      other: "{{count}} jours"
+    about_x_months:
+      one:   "environ un mois"
+      other: "environ {{count}} mois"
+    x_months:
+      one:   "1 mois"
+      other: "{{count}} mois"
+    about_x_years:
+      one:   "environ un an"
+      other: "environ {{count}} ans"
+    over_x_years:
+      one:   "plus d'un an"
+      other: "plus de {{count}} ans"
+  prompts:
+    year:   "Année"
+    month:  "Mois"
+    day:    "Jour"
+    hour:   "Heure"
+    minute: "Minute"
+    second: "Seconde"
 
-  number:
+number:
+  format:
+    precision: 3
+    separator: ','
+    delimiter: ' '
+  currency:
     format:
-      precision: 3
-      separator: ','
-      delimiter: ' '
-    currency:
-      format:
-        unit: '€'
-        precision: 2
-        format: '%n %u'
-    human:
-      format:
-        precision: 2
-      storage_units: [ Octet, ko, Mo, Go, To ]
+      unit: '€'
+      precision: 2
+      format: '%n %u'
+  human:
+    format:
+      precision: 2
+    storage_units: [ Octet, ko, Mo, Go, To ]
 
-  labels:
-    label_not_found: 'Étiquette non trouvé:'
-    hello:  "Bonjour"
-    thanks: "Merci"
-    i_like_systems: "Je aime {{0}} et {{1}}"
-   
+labels:
+  label_not_found: 'Étiquette non trouvé:'
+  hello:  "Bonjour"
+  thanks: "Merci"
+  i_like_systems: "Je aime {{0}} et {{1}}"
+ 
